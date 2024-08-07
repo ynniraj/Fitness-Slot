@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import s from "../../styles/book.module.scss";
 import axios from "axios";
 
