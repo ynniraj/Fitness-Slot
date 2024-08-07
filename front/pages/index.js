@@ -33,7 +33,11 @@ export default function Home() {
         </Link>
       </div>
 
-      {!selectedUser ? <div className="userSelect">Select User First</div> : <ShowClasses />}
+      {!selectedUser ? (
+        <div className="userSelect">Select User First</div>
+      ) : (
+        <ShowClasses />
+      )}
     </>
   );
 }
