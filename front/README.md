@@ -1,40 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Frontend Project Setup and API Routes Documentation
+This document provides an overview of the available frontend routes and the steps to set up the project.
 
-## Getting Started
+Frontend Routes
+Main Routes
 
-First, run the development server:
+Home Page
+URL: http://localhost:3000
+Description: The main landing page of the application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Cancel Classes
+URL: http://localhost:3000/cancel
+Description: Page to cancel booked classes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create Class
+URL: http://localhost:3000/create-class
+Description: Page to create new classes.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Yoga Class Details
+URL: http://localhost:3000/Yoga/66b36d05503e9a7bd58064f6
+Description: Page showing details for the Yoga class with the specific ID.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Project Setup
+Follow the steps below to set up and run the frontend project:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Navigate to the project directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+cd front/
 
-## Learn More
+Install dependencies:
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+Build the project:
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the project:
+npm start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Available API Routes
 
-## Deploy on Vercel
+Add Classes
+Endpoint: /api/add-classes
+Method: POST
+Description: Adds new classes to the system.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Book Classes
+Endpoint: /api/book-classes
+Method: POST
+Description: Books classes for a user.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Cancel Classes
+Endpoint: /api/cancel-classes
+Method: POST
+Description: Cancels booked classes.
+
+Get All Classes
+Endpoint: /api/all-classes
+Method: GET
+Description: Retrieves all available classes.
+
+Get Classes by ID
+Endpoint: /api/all-classes/:id
+Method: GET
+Description: Retrieves class details by ID.
+
+Get User Classes
+Endpoint: /api/getuser-classes
+Method: GET
+Description: Retrieves classes booked by the user.
+
+Filter Classes
+Endpoint: /api/filter-classes
+Method: GET
+Description: Filters classes based on criteria.
+
