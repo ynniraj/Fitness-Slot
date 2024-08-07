@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.selectDiv {
+  margin: 20px;
+}
+.selectDiv h2 {
+  margin-bottom: 10px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.userSelect {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+select {
+  width: 30%;
+  padding: 10px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  select {
+    width: 50%;
+  }
+}
